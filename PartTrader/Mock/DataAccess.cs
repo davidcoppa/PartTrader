@@ -34,7 +34,9 @@ namespace PartTrader.API.Mock
                     CompatibleParts = (returnValue.CompatibleParts == null) ? new List<Parts>() : returnValue.CompatibleParts,
                     Description = returnValue.Description,
                     PartId = returnValue.PartId,
-                    PartCode = returnValue.PartCode
+                    PartCode = returnValue.PartCode,
+                    Price = returnValue.Price
+                    
                 };
                 returnList.Add(value);
             }

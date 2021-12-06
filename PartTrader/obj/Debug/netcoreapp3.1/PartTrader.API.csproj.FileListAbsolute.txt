@@ -23,4 +23,3 @@ D:\Dropbox\david\code\GitHub\tmp\PartTrader\PartTrader\obj\Debug\netcoreapp3.1\P
 D:\Dropbox\david\code\GitHub\tmp\PartTrader\PartTrader\obj\Debug\netcoreapp3.1\PartTrader.API.genruntimeconfig.cache
 D:\Dropbox\david\code\GitHub\tmp\PartTrader\PartTrader\obj\Debug\netcoreapp3.1\PartTrader.API.csproj.AssemblyReference.cache
 D:\Dropbox\david\code\GitHub\tmp\PartTrader\PartTrader\bin\Debug\netcoreapp3.1\PartTrader.API.Views.dll
-D:\Dropbox\david\code\GitHub\tmp\PartTrader\PartTrader\bin\Debug\netcoreapp3.1\PartTrader.API.Views.pdb

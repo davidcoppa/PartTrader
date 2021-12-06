@@ -68,7 +68,7 @@ export class NewWorkOrderComponent implements OnDestroy {
   get f() { return this.workOrderForm.controls; }
 
   public workOrderForm: FormGroup = new FormGroup({
-    partNumber: new FormControl("", [Validators.required, Validators.pattern("^[0-9]{4}[-][a-zA-Z][a-zA-Z0-9]{4,}$")]),
+    partNumber: new FormControl("", [Validators.required, Validators.pattern("^[0-9]{4}[-][a-zA-Z][a-zA-Z0-9]{3,}$")]),
     isOnStorage: new FormControl(),
     compatibleParts: new FormControl()
   })
@@ -103,8 +103,11 @@ export class NewWorkOrderComponent implements OnDestroy {
 
   ShowRow() {
     //copy the item into the list
+    console.log(this.workOrderForm);
+
     let order: WorkOrder = Object.assign(new WorkOrder(), this.workOrderForm.value);
     this.workOrderList.push(order);
+
 
     //make visible the list items
     this.workOrderItems = true;

@@ -11,6 +11,7 @@ namespace PartTrader.API.Model
         public string PartId { get; set; }
         public string PartCode { get; set; }
         public string Description { get; set; }
+        public double Price { get; set; }
         public List<Parts> CompatibleParts { get; set; }
     }
 }
