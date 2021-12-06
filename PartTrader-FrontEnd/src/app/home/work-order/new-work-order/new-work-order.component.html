@@ -1,0 +1,55 @@
+<div class="container">
+    <form [formGroup]="workOrderForm" (ngSubmit)="onSubmit()">
+        <div class="form-group row">
+            <label for="partNumber"> Part Number </label>
+            <input type="text" formControlName="partNumber" >
+
+            <div *ngIf="f['partNumber'].errors && (f['partNumber'].dirty || f['partNumber'].touched) " class="danger">
+                <div *ngIf="f['partNumber'].errors['required']">
+                    Part Number is required
+                </div>
+                <div *ngIf="f['partNumber'].errors['pattern']">Invalid PartNumber, Should be "4 digits" + "-" + " +4
+                    alphanumeric characters</div>
+                
+              </div>
+
+        </div>
+       
+
+        <button type="button" [disabled]="workOrderForm.invalid" (click)="Add()">Add item</button>
+
+
+        <div *ngIf=workOrderItems>
+            <div class="container">
+
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Part Number</th>
+                            <th scope="col">Is on storage</th>
+                            <th scope="col">Compatible Parts</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of workOrderList; index as i">
+                            <th scope="row">{{ i + 1 }}</th>
+                            <td>
+                                {{ item.partNumber}}
+                            </td>
+                            <td>{{ item.isOnStorage | yesNo}}</td>
+                            <td>{{ item.compatibleParts}}</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container">
+                <button type="button" (click)="ClearOrder()">Clear Order</button>
+
+                <button type="submit">Create Order</button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+
+    <form [formGroup]="searchParts" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="Part Number"> Part Number </label>
+            <input type="text" formControlName="partNumber" class="">
+        </div>
+
+        <span>
+        <div class="container">
+            <button type="button"  (click)="Clear()">Clear</button>
+
+            <button type="submit" [disabled]="searchParts.invalid">Search</button>
+        </div>
+    </span>
+    </form>
+
+
+
+</div>
+<div>
+    <ng-container *ngIf="resultData">
+        <app-catalogue [dataFromFilter]="resultData"></app-catalogue>
+        
+      </ng-container>
+
+</div>

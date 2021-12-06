@@ -1,0 +1,9 @@
+D:\Dropbox\david\code\GitHub\tmp\PartTrader\PartTrader\obj\Release\netcoreapp3.1\PubTmp\Out\PartTrader.API.exe
+D:\Dropbox\david\code\GitHub\tmp\PartTrader\PartTrader\obj\Release\netcoreapp3.1\PubTmp\Out\PartTrader.API.dll
+D:\Dropbox\david\code\GitHub\tmp\PartTrader\PartTrader\obj\Release\netcoreapp3.1\PubTmp\Out\PartTrader.API.deps.json
+D:\Dropbox\david\code\GitHub\tmp\PartTrader\PartTrader\obj\Release\netcoreapp3.1\PubTmp\Out\PartTrader.API.runtimeconfig.json
+D:\Dropbox\david\code\GitHub\tmp\PartTrader\PartTrader\obj\Release\netcoreapp3.1\PubTmp\Out\PartTrader.API.pdb
+D:\Dropbox\david\code\GitHub\tmp\PartTrader\PartTrader\obj\Release\netcoreapp3.1\PubTmp\Out\AutoMapper.dll
+D:\Dropbox\david\code\GitHub\tmp\PartTrader\PartTrader\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Dropbox\david\code\GitHub\tmp\PartTrader\PartTrader\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.DependencyModel.dll
+D:\Dropbox\david\code\GitHub\tmp\PartTrader\PartTrader\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.dll

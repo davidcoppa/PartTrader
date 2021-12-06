@@ -1,0 +1,6 @@
+
+export class WorkOrder{
+    partNumber: string
+    isOnStorage: boolean
+    compatibleParts: []
+}

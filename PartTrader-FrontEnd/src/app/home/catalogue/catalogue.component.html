@@ -1,0 +1,28 @@
+
+<div class="container">
+<table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Part Number</th>
+        <th scope="col">Description</th>
+        <th scope="col">Price</th>
+        <th scope="col">Compatible with</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let parts of partsList; index as i">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>
+              {{ parts.partId}}-{{parts.partCode}}
+            </td>
+            <td>{{ parts.description}}</td>
+            <td>{{ parts.price | number | currency:'NZD'}}</td>
+            <td *ngFor="let partsCompatibles of parts.compatibleParts;">
+              {{ partsCompatibles.partId}}-{{partsCompatibles.partCode}}
+            </td>
+
+          </tr>
+    </tbody>
+  </table>
+</div>
