@@ -9,8 +9,6 @@ namespace PartTrader.API.Model
 {
     public class Parts
     {
-        //public string PartNumber { get; set; }
-
         [Required(ErrorMessage = "PartId is required")]
         [RegularExpression("^[0-9]{4}$", ErrorMessage = "Please enter valid Part Id")]
         public string PartId { get; set; }
